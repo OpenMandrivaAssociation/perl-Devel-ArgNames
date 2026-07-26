@@ -1,15 +1,13 @@
 %define upstream_name    Devel-ArgNames
-%define upstream_version 0.03
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.03
+Release:	7
 
 Summary:	Figure out the names of variables passed into subroutines
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Devel-ArgNames
-Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ When print-debugging code, you will often ind yourself going:
 With this module, you can write a reusable subroutine easily:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
