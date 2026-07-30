@@ -1,13 +1,14 @@
 %define upstream_name    Devel-ArgNames
+%define upstream_version 0.03
 Name:		perl-%{upstream_name}
 Version:	0.03
-Release:	7
+Release:	1
 
 Summary:	Figure out the names of variables passed into subroutines
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Devel-ArgNames
-Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/Devel-ArgNames-0.03.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,15 +42,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/*
 
 
-%changelog
-* Sat Apr 16 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2mdv2011.0
-+ Revision: 653405
-- rebuild for updated spec-helper
-
-* Tue Jul 27 2010 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
-+ Revision: 561557
-- import perl-Devel-ArgNames
-
-
-* Tue Jul 27 2010 cpan2dist 0.03-1mdv
-- initial mdv release, generated with cpan2dist
