@@ -2,7 +2,7 @@
 %define upstream_version 0.03
 Name:		perl-%{upstream_name}
 Version:	0.03
-Release:	3
+Release:	4
 
 Summary:	Figure out the names of variables passed into subroutines
 License:	GPL+ or Artistic
